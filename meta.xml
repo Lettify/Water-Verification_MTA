@@ -1,0 +1,6 @@
+<meta>
+	<info author="KronoS Lettify" name="Water Verification System" description="Feito com <3 por KronoS. Faça qualquer coisa que vier na mente quando um jogador entrar na água." version="1.5" type="script" />
+	<script src='utils.lua' type='shared' />
+	<script src="c.lua" type="client" />
+	<script src="s.lua" />
+</meta>
