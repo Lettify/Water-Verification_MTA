@@ -51,6 +51,17 @@ addCustomEvent {
 	end
 }
 
+addCustomEvent {
+	eventName = 'elementDestroy',
+	attachedTo = resourceRoot,
+	allowRemoteTrigger = true,
+	theFunction = function (element)
+		if (VEHICLE_WAS_IN_WATER[element]) then
+			VEHICLE_WAS_IN_WATER[element] = nil
+		end
+	end
+}
+
 
 --[[
 function onClientElementGetInWater()

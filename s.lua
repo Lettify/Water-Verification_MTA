@@ -7,6 +7,12 @@ addCustomEvent {
     end
 }
 
+addEventHandler('onElementDestroy', root, 
+    function ()
+        triggerClientEvent('elementDestroy', resourceRoot, source)
+    end
+)
+
 --[[
 function onClientElementGetInWater()
     -- FAÇA QUALQUER COISA QUANDO UM JOGADOR ENTRAR NA ÁGUA
